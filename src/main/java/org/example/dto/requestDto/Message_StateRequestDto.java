@@ -4,15 +4,14 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
 import java.util.UUID;
 
 @Setter
 @Getter
 @Builder
-public class MessageRequestDto {
-    private String text;
+public class Message_StateRequestDto {
+    private UUID messageId;
     private UUID userId;
-    private List<UUID> views;
-    private List<String> comments;
+    private UUID groupId;
+    private String messageStatus;
 }

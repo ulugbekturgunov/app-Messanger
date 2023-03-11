@@ -1,4 +1,4 @@
-package org.example.dto.requestDto;
+package org.example.dto.responseDto;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -10,7 +10,8 @@ import java.util.UUID;
 @Setter
 @Getter
 @Builder
-public class MessageRequestDto {
+public class MessageResponse {
+    private UUID id;
     private String text;
     private UUID userId;
     private List<UUID> views;

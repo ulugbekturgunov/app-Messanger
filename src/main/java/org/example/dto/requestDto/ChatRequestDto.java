@@ -10,9 +10,8 @@ import java.util.UUID;
 @Setter
 @Getter
 @Builder
-public class MessageRequestDto {
-    private String text;
-    private UUID userId;
-    private List<UUID> views;
-    private List<String> comments;
+public class ChatRequestDto {
+    private UUID user1;
+    private UUID user2;
+    /*MessageEntityId-->*/private List<UUID> messages;
 }

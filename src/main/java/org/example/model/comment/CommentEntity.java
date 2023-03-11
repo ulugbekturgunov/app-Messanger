@@ -1,20 +1,19 @@
-package org.example.model.message;
+package org.example.model.comment;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.example.enums.Message_Status;
 import org.example.model.BaseModel;
 
+import java.util.Date;
 import java.util.UUID;
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Message_State extends BaseModel {
-    private UUID messageId;
+public class CommentEntity extends BaseModel {
     private UUID userId;
-    private UUID groupId;
-    private Message_Status messageStatus;
+    private String text;
+    private Date date = new Date();
 }
