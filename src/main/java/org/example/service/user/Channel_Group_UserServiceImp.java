@@ -34,17 +34,19 @@ public class Channel_Group_UserServiceImp implements Channel_Group_UserService{
     }
 
     @Override
-    public List<Channel_Group_User_Entity> getData() {
-        return null;
+    public boolean writeData(List<Channel_Group_User_Entity> data) {
+        return false;
     }
 
     @Override
-    public boolean writeData(List<Channel_Group_User_Entity> data) {
-        return false;
+    public List<Channel_Group_User_Entity> getData() {
+        return null;
     }
 
     @Override
     public Channel_Group_User_Entity getEntity(UUID id) {
         return null;
     }
+
+
 }

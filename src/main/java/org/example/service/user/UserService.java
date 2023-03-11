@@ -7,5 +7,8 @@ import org.example.service.BaseService;
 
 import java.util.UUID;
 
-public interface UserService extends BaseService<UserRequestDto, UUID, UserResponseDto, UserEntity> {
+public interface UserService
+        extends BaseService<UserRequestDto, UUID, UserResponseDto, UserEntity> {
+    UserResponseDto getPhoneNumber(String phoneNumber);
 }
+
